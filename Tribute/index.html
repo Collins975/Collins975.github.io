@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PHP Version 3 - Technical Documentation Page</title>
+  <title>Michael Jackson - Tribute Page</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,306 +20,83 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    
-  <style>
-    body {
-  font-family: 'Open Sans',Arial,sans-serif;
-  line-height: 1.5;
-  color: hsl(0, 0%, 20%);
-}
-    #navbar {
-  position: fixed;
-  top: -1px;
-  left: 0px;
-  width: 30vw;
-  height: 100%;
-  border-style: solid;
-  border-width: 1px;
-}
 
-#navbar header {
-  text-align: center;
-}
-
-#nav-list {
-  list-style: none;
-  padding-left: 0px;
-  overflow-y:auto;
-}
-
-#nav-list li {
-  border-style: solid;
-  border-width: 1px;
-  border-color: hsl(0, 0%, 90%);
-  text-align: center;
-}
-
-#nav-list li:hover {
-  animation-name: nav-list-item-color;
-  animation-duration: 90ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes nav-list-item-color {
-  100% {
-      background-color: hsl(200, 70%, 90%);
-      border-width: 2px;
-      border-color: hsl(200, 70%, 30%);
-  }
-}
-
-.nav-link {
-  text-decoration: inherit;
-  color: inherit;
-}
-
-main {
-  margin-left: 31vw;
-  margin-right: 1vw;
-}
-
-main ol {
-  list-style: disc;
-}
-
-main li {
-  margin-top: 5px;
-}
-
-.main-section {
-  text-align: justify;
-}
-
-code{
-  background-color: hsl(50, 90%, 96%);
-  display:block;
-  line-height: 2;
-  white-space: pre;
-  word-wrap: normal;
-  border-radius:5px;
-  padding: 5px;
-  padding-left: 10px;
-}
-
-@media(max-width: 950px) {
-  #navbar {
-    position: relative;
-    width: 100%;
-    border-style: none;
-    height: auto;
-  }
-  #nav-list {
-    max-height: 35vh;
-    width: 100%;
-  }
- 
-  main {
-    margin: auto;
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-}
-</style>
 </head>
 
-<body style="background-color:#DCDCDC;" id="page-top">
+<body id="page-top">
 
-  <!-- Nav Bar -->
-  <nav id="navbar">
-    <header>
-      <h1 style="border-bottom: 1px dotted #000;">PHP Version 3 Documentation</h1>
-      <h1 style="border-bottom: 1px dotted #000;">Table of Contents</h1>
-    </header>
-    <ol id="nav-list">
-      <a href="#introduction" class="nav-link"><li>Introduction</li></a>
-      <a href="#configuration_directives" class="nav-link"><li>Configuration Directives</li></a>
-      <a href="#changed_behaviour" class="nav-link"><li>Changed Behaviour</li></a>
-      <a href="#miscellaneous" class="nav-link"><li>Miscellaneous</li></a>
-      <a href="#migration" class="nav-link"><li>Migration</li></a>
-      <a href="#debugger" class="nav-link">
-      <li>Debugger</li></a>
-      <a href="#internals" class="nav-link"><li>Internals</li></a>
-      <a href="#installation" class="nav-link"><li>Installation</li></a>
-	  <a href="#reference" class="nav-link"><li>Reference</li></a>
-    </ol>
-  </nav>
-    
-    <main id="main-doc">
+  <!-- Header -->
+  <header class="d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Michael Joseph Jackson</h1>
+      <h3 class="mb-5">
+        <em>The late American singer, songwriter and dancer, who was dubbed the "King of Pop", popularized complicated dance techniques such as the moonwalk.</em>
+      </h3>
+    <div class="overlay"></div>
+  </header>
+      
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+    <div class="overlay"></div>
+  </header>
+ 
+  <div style="text-align:center;" id="img-caption"><em>(Image: Washington Post/Creative Commons).</em></div>
 
-  <!-- Introduction -->
-  <section id="introduction" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Introduction</h2>
-      </header>
-      <article>
-      <p>
-        The PHP 3 documentation was removed from the PHP Manual and placed here for historical purposes. An attempt was made to preserve all of the text although it's highly likely that some is missing. The last PHP 3 release (3.0.18) was made on October 20, 2000.
-      </p>
-      <p>
-        See the <a href="https://museum.php.net/">PHP Museum</a> for downloads, and also read the <a href="https://www.php.net/history">history</a> for further information about PHP 3.
-      </p>
-      </article>
-    </section>
+  <!-- Timeline -->
+  <section class="content-section" id="timeline">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Timeline</h3>
+        <h2 class="mb-5">Here's a timeline of Michael Jackson's life:</h2>
+      </div>
+      <div class="computer">
+      <ul style="max-width:800px; margin-right:auto; margin-left:auto;">
+              <li><strong>1958</strong> - Born August 29 in Gary, Indiana. He is the seventh child of Joseph and Katherine Esther Jackson.</li>
+              <li><strong>1969</strong> - In Los Angeles, the Jackson 5 debut as Motown’s newest act.
 
-  <!-- Configuration Directives -->
-  <section id="configuration_directives" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Configuration Directives</h2>
-      </header>
-      <article>
-      <p>Most directives are prepended with php3_ instead of php_. These differences are not mentioned in this document.</p>
-      <p style="font-size:large;">Changed</p>
-      <p>
-        <ol style="list-style:none;">
-          <li>FTP configure option changed from <em>--with-ftp</em> to <em>--enable-ftp</em></li><br>
-          <li>The value of E_ALL is 63.</li><br>
-          <li>The <em>asp_tags</em> directive was added in PHP 3.0.4.</li><br>
-          <li>The E_* constants have no meaning in <em>php3.ini</em>, but numeric values do.</li>
-        </ol>
-      </p>
-      <p style="font-size:large;">Removed</p>
-      <p>
-        <ol style="list-style:none;">
-          <li><em>--with-imsp[=DIR]</em> includes IMSP support (DIR is IMSP's include dir and libimsp.a dir).</li><br>
-          <li><em>--with-mck[=DIR]</em> includes Cybercash MCK support. DIR is the cybercash mck build directory, defaults to /usr/src/mck-3.2.0.3-linux</li><br>
-          <li><em>--with-mod-dav=DIR</em> includes DAV support through Apache's mod_dav, DIR is mod_dav's installation directory (Apache module version only).</li><br>
-          <li>If the <em>sybase.compatability_mode</em> directive is on, this will cause PHP to automatically assign types to results according to their Sybase type, instead of treating them all as strings.</li>
-        </ol>
-      </p>
-      </article>
-    </section>
+                In December, the group’s single “I Want You Back” hits No. 1 on the Billboard Top 40 Chart.</li>
+              <li><strong>1970</strong> - Jackson 5 hits “ABC, “The Love You Save” and “I’ll Be There” all reach No. 1 on Billboard charts.</li>
+              <li><strong>1972</strong> - First No. 1 solo hit “Ben,” a song about a movie rat.</li>
+              <li><strong>1974</strong> - Introduces a dance step called the robot on “Soul Train.” The step sweeps the country.</li>
+              <li><strong>1978</strong> - Played “The Scarecrow” in the movie musical “The Wiz,” alongside Diana Ross, Richard Pryor and Nipsey Russell.</li>
+              <li><strong>1979</strong> - Jackson’s “Off the Wall” solo album catapults him to superstar status.</li>
+              <li><strong>1982</strong> - “Thriller” is released, eventually selling more than 100 million copies. It makes Jackson the biggest pop music star of the decade. The record becomes one of the best-selling albums of all time.</li>
+              <li><strong>1983</strong> - “Beat It” reaches No. 1 on the charts.</li>
+              <li><strong>1984</strong> - Jackson’s hair catches on fire during filming of a Pepsi commercial.</li>
+              <li><strong>1987</strong> - News reports say Jackson tries to buy the skeleton of the “Elephant Man.” The album “Bad” is released and sells more than 8 million copies.</li>
+              <li><strong>1988</strong> - Michael Jackson donates $125,000 from a concert at the Palace of Auburn Hills, Mich., and some personal memorabilia to start off a fundraising drive to preserve and improve the Motown Historical Museum.</li>
+              <li><strong>1991</strong> - Releases “Dangerous” album, certified for 7 million in sales.</li>
+              <li><strong>1993</strong> - In his first TV interview in 14 years, Jackson tells Oprah Winfrey that the change in his skin complexion is from a disorder called vitiligo. A lawsuit claims that Jackson seduced and abused a 13-year-old boy.</li>
+              <li><strong>1994</strong> - Settles the lawsuit with substantial payment to the plaintiff. Los Angeles and Santa Barbara district attorneys don’t file child molestation charges against him.
 
-  <!-- Changed Behaviour -->
-  <section id="changed_behaviour" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Changed Behaviour</h2>
-      </header>
-      <article>
-      <p style="font-size:large;">Return values</p>
-      <p>
-        <ol style="list-style:none;">
-          <li>unset() returns 1.</li><br>
-          <li>Multiple calls to setcookie() in the same script will be performed in reverse order. And put the insert before the delete when trying to delete one cookie before inserting another.</li><br>
-          <li>eval() does not return a value.</li><br>
-        </ol>
-      </p>
-      <p style="font-size:large;">Function parameters</p>
-      <p>
-        <ol style="list-style:none;">
-          <li>gettype() has a 'user function' return value.</li><br>
-          <li>htmlspecialchars() added the second parameter in PHP 3.0.17.</li><br>
-          <li>error_log()'s second parameter, message, goes through the debugger.</li><br>
-          <li>empty() considers "0" as non-empty, a value that for example may come from an HTML form.</li>
-        </ol>
-      </p>
-      <p style="font-size:large;">Other</p>
-      <p>
-        <ol style="list-style:none;">
-          <li>Variables are always assigned by value, as there are no references.</li><br>
-          <li>Using arrays within HTML forms is limited to single dimensional arrays.</li><br>
-          <li>When escaping characters in single quoted strings, an E_NOTICE level error is generated.</li><br>
-          <li>Objects lose their class association throughout the process of serialization and unserialization.</li><br>
-          <li>Functions must be defined before use. In other words, top to bottom.</li><br>
-          <li>Variable number of arguments are not supported.</li><br>
-          <li>Return may only be used within function blocks.</li>
-        </ol>
-      </p>
-      </article>
-    </section>
+Marries Lisa Marie Presley, daughter of Elvis Presley.</li>
+              <li><strong>2008</strong> - "Thriller 25" and fan-curated compilation "King of Pop" are released.</li>
+              <li><strong>June 25, 2009</strong> - Jackson dies at the age of 50.</li>
+            </ul>
+      </div>
+    </div>
+  </section>
 
-  <!-- Miscellaneous -->
-  <section id="miscellaneous" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Miscellaneous</h2>
-      </header>
-      <article>
-      <p>
-        <ol style="list-style:none;">
-          <li>The PCRE modifier is not available.</li><br>
-          <li>is_uploaded_file() exists as of PHP 3.0.16.</li><br>
-          <li>BC Math is enabled by default, --disable-bcmath disables it.</li><br>
-          <li>The behaviour of register_globals is always on, because the directive does not exist.</li><br>
-          <li>The short_tags() function may be used to enable short tags (?>)</li><br>
-          <li>The CGI build has a 'make bench' tool for benchmarking the build. It will likely take over 30 seconds to run so be sure to allow the appropriate time limit.</li><br>
-          <li>SAPI support is not available.</li><br>
-          <li>The HTTP PUT method is allowed for saving files, which are handled similarly to POST method file saves. $PHP_PUT_FILENAME holds the location of the temporary file created, which must be moved during the request else it will be deleted.</li><br>
-          <li>ODBC is enabled by default, to disable use <em>--disable-unified-odbc</em></li><br>
-          <li>GD is enabled by default, to disable use <em>--without-gd</em></li><br>
-          <li>Installing PHP 3 in Apache:</li><br>
-           <code>AddModule mod_php3.c<br>
-                LoadModule php3_module modules/libphp3.so<br>
-                AddType application/x-httpd-php3 .php3</code>
-          <li>The SESAM extension is specific to PHP 3 and was removed.</li>
-        </ol>
-      </p>
-      </article>
-    </section>
+  <!-- Quote Section -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+        <div class="monitor">
+        <blockquote>
+              <h2 style="max-width:800px; margin-right:auto; margin-left:auto;">"I can't stop crying over the sad news. I've always admired Michael Jackson – the world has lost one of its greats but his music will live on forever. My heart goes out to his three children and other members of his family. God bless."</h2>
+              <footer style="max-width:800px; margin-right:auto; margin-left:auto;"><cite>Pop Star Madonna</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+  </section>
 
-  <!-- Migration -->
-  <section id="migration" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Migration</h2>
-      </header>
-      <article>
-      <p>
-        There are a few migration specific documents involving PHP 3 but due to their size and structure they were not added to this document.
-      </p>
-      </article>
-    </section>
-
-  <!-- Debugger -->
-  <section id="debugger" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Debugger</h2>
-      </header>
-      <article>
-      <p>
-        Information related to the debugger that comes standard with PHP 3 was not added to this document.
-      </p>
-      </article>
-    </section>
-
-  <!-- Internals -->
-    <section id="internals" class="main-section">
-      <header>
-        <h2 style="border-bottom: 1px dotted #000;">Internals</h2>
-      </header>
-      <article>
-      <p>
-        Information related to the internal workings of PHP 3 that is commonly used to create extensions was not added to this document.
-      </p>
-      </article>
-    </section>
-
-   <!-- Installation -->
-    <section id="installation" class="main-section">
-      <header>
-        <h2>Installation</h2>
-      </header>
-      <article>
-      <p>PHP can be installed with or without a web server.</p>
-      <p style="font-size:large;">GNU/Linux</p>
-      <p>On Debian based GNU/Linux distros, you can install by :</p>
-      <code>sudo apt install php</code>
-      <p>On Centos 6 or 7 you can install by :</p>
-      <code>sudo yum install php</code>
-      <p>After installing you can run any PHP files by simply doing this in terminal :</p>
-      <code>php file.php</code>
-      <p>You can also install a localhost server to run PHP websites. For installing Apache Web Server :</p>
-      <code>sudo apt install apache2 libapache2-mod-php</code>
-      </article>
-    </section>
-
-  <!-- Reference -->
-    <section id="reference" class="main-section">
-      <header>
-        <h2>Reference</h2>
-      </header>
-      <article>
-      <p>All the documentation in this page is taken from <a href="https://www.php.net/manual/php3.php">PHP's manual page</a></p>
-      </article>
-    </section>
-  </main>
+  <!-- Read More -->
+  <section class="content-section bg-light">
+    <div class="container text-center">
+        <div class="commit">
+    <h3 style="text-align:center;">At your leisure period, you can decide to read more about this amazing entertainer on his <a id ="tribute-link" href="https://en.wikipedia.org/wiki/Michael_Jackson#1958%E2%80%931975:_Early_life_and_the_Jackson_5" target="_blank">Wikipedia entry</a>.</h3>
+        </div>
+      </div>
+      </section>
 
   <!-- Footer -->
   <footer class="footer text-center">
@@ -336,7 +113,7 @@ code{
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/Collins975">
+          <a class="social-link rounded-circle text-white  mr-3" href="https://github.com/Collins975">
             <i class="icon-social-github"></i>
           </a>
         </li>
