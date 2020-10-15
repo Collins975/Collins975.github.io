@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Prodigies - STEM & Robotics</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color:lightgoldenrodyellow;" id="page-top">
+
+  <!-- Header -->
+  <header class="d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Summer Camp Survey Form</h1>
+      <h3 class="mb-5">
+        <em>Fill the form below, to sign up for our upcoming coding and robotics summer camp classes</em>
+      </h3>
+  </header>
+
+  <!-- Form -->
+  <section class="content-section" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <form style="background-color:white; width:97%; border-radius:15px; padding:20px;" id="survey-form">
+    <div style="margin:0 auto 1.35rem auto; padding:0.35;">
+      <label style="float: left; font-size :20px; margin: 5px 0 5px 0;" id="name-label" for="name">Name</label>
+      <input style="height: 25px; width:100%;" type="text" name="name" id="name" placeholder="Enter your full name" required />
+    </div>
+    <div style="margin:0 auto 1.35rem auto; padding:0.35;">
+      <label style="float: left; font-size :20px; margin: 5px 0 5px 0;" id="email-label" for="email">Email</label>
+      <input style="height: 25px; width:100%;" type="email" name="email" id="email" placeholder="Enter your Email" required /> 
+    </div>
+    <div style="margin:0 auto 1.35rem auto; padding:0.35;">
+      <label style="float: left; font-size :20px; margin: 5px 0 5px 0;" id="number-label" for="number">Age<span style="margin-left: 0.25rem; font-size: 0.8rem; color: #C0C0C0;">(optional)</span></label>
+      <input style="height: 25px; width:100%;" type="number" name="age" id="number" min="5" max="18" placeholder="Enter your Age" />
+    </div>
+    <div style="margin:0 auto 1.35rem auto; padding:0.35;">
+      <p style="float: left; font-size :20px; margin: 5px 0 5px 0;">Which of the following packages will you be interersted in?</p>
+      <select p style="float: left; font-size :15px; margin:5px 0 5px 0; height:30px; width:100%;" id="dropdown" name="role" required>
+        <option disabled selected value>Select Package</option>
+        <option value="coding">Coding</option>
+        <option value="robotics">Robotics</option>
+        <option value="game-design">Game Design</option>
+        <option value="html-css">Html & CSS</option>
+      </select>
+    </div>
+    <div>
+      <p style="float: left; font-size :20px; margin: 5px 0 5px 0;">How many months course will you prefer to enrol for?</p><br>
+      <label><input name="coding-robotics" value="8-months" type="radio" checked />8 Months</label><br>
+      <label><input name="coding-robotics" value="12-months" type="radio" />12 Months</label><br>
+    </div>
+    <div>
+      <P style="float: left; font-size :20px; margin: 5px 0 5px 0;">Which location will you prefer to undergo your training?</p><br>
+      <label><input name="favourite" value="our-hub" type="checkbox" />Our Hub</label>
+      <label><input name="favourite" value="your-home" type="checkbox" />Your Home</label>
+      <label><input name="favourite" value="your-school" type="checkbox" />Your School</label>
+    </div>
+    <div>
+      <p style="float: left; font-size :20px; margin: 5px 0 5px 0;">Kindly leave some comments or suggestions below</p><br>
+      <textarea placeholder="Enter your comments or suggestions in here"></textarea>
+    </div>
+    <div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <div id="contact" class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2725167147023!2d3.3626921148565114!3d6.487133725384571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c71616eebd1%3A0x7308b0a1970074f1!2sLeeZ%20World%20Enterprises!5e0!3m2!1sen!2sng!4v1602259371288!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <br />
+    <small>
+      <a href="https://www.google.com/maps/place/LeeZ+World+Enterprises/@6.4871337,3.3626921,17z/data=!3m1!4b1!4m5!3m4!1s0x103b8c71616eebd1:0x7308b0a1970074f1!8m2!3d6.4871284!4d3.3648808"></a>
+    </small>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/collins-okwologu-a80955b1/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/Okwologu_">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/Collins975">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="tel:+234-706-380-9035">
+            <i class="icon-call-in"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="mailto: collinsokwologu975@gmail.com">
+            <i class="icon-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Prodigies STEM & Robotics Nigeria Plc., 2020. All Rights Reserved.</p>
+      <p class="text-muted small mb-0">Website Created by Hybrid Media Concept</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
