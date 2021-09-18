@@ -1,3 +1,32 @@
 * {
     transition: all 0.5s ease-in-out;
 }
+
+.header {
+    background: #1abc9c;
+    padding: 60px;
+  }
+
+.nura {
+    text-align: left;
+    color: white;
+    font-style: italic;
+}
+
+.roli {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+#footer {
+    background: grey;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
